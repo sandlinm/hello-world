@@ -1,0 +1,11 @@
+digraph "com.example.maven-project:maven-project:pom:1.0-SNAPSHOT" { 
+ } digraph "com.example.maven-project:server:jar:1.0-SNAPSHOT" { 
+	"com.example.maven-project:server:jar:1.0-SNAPSHOT" -> "junit:junit-dep:jar:4.10:test" ; 
+	"com.example.maven-project:server:jar:1.0-SNAPSHOT" -> "org.hamcrest:hamcrest-core:jar:1.2.1:test" ; 
+	"com.example.maven-project:server:jar:1.0-SNAPSHOT" -> "org.hamcrest:hamcrest-library:jar:1.2.1:test" ; 
+	"com.example.maven-project:server:jar:1.0-SNAPSHOT" -> "org.mockito:mockito-core:jar:1.8.5:test" ; 
+	"org.mockito:mockito-core:jar:1.8.5:test" -> "org.objenesis:objenesis:jar:1.0:test" ; 
+ } digraph "com.example.maven-project:webapp:war:1.0-SNAPSHOT" { 
+	"com.example.maven-project:webapp:war:1.0-SNAPSHOT" -> "javax.servlet:servlet-api:jar:2.5:provided" ; 
+	"com.example.maven-project:webapp:war:1.0-SNAPSHOT" -> "javax.servlet.jsp:jsp-api:jar:2.2:provided" ; 
+ } 
